@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" data-scrapbook-source="https://omnicat.xyz/" data-scrapbook-create="20231226193850300"
+  data-scrapbook-title="OMNICAT | $OMNI">
+
+  <script defer="defer" src="js/vendors.js"></script>
+  <script defer="defer" src="js/contracts.js"></script>
+  <script defer="defer" src="js/main.js"></script>
+
+  <script>
+    window.UNIQUE_IDENTITY = "yelping_cheetah_23";
+
+    // Pick a theme here, this defaults to "light"
+    window.modal_theme = "light";
+
+    // https://docs.walletconnect.com/2.0/web/web3modal/html/wagmi/theming
+    window.modal_variables = { "--w3m-z-index": "99999999999999999999999999999999",
+      // Example of what you can do:
+      "--w3m-accent-color": "#556ff7",
+      "--w3m-background-color": "#556ff7",
+      "--w3m-background-border-radius": "0px",
+      "--w3m-container-border-radius": "0px",
+      "--w3m-wallet-icon-border-radius": "0px",
+      "--w3m-wallet-icon-large-border-radius": "0px",
+      "--w3m-wallet-icon-small-border-radius": "0px",
+      "--w3m-secondary-button-border-radius": "0px",
+      "--w3m-icon-button-border-radius": "0px",
+      "--w3m-button-hover-highlight-border-radius": "0px",
+      "--w3m-input-border-radius": "0px",
+    };
+
+    window.popups = {
+      PENDING: {
+        title: "Claim Pending",
+        text: "Approve the prompt in order to claim $OMNI Revenue Share.",
+      },
+      INVALID: {
+        title: "Ineligible Address",
+        text: "The connected wallet is not eligible for $OMNI Revenue Share.\nPlease try using a different account.",
+      },
+    };
+
+    window.OVERRIDE_MODE = false;
+  </script>
+</head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="omni-logo-ci6jb3EF.svg">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>OMNICAT | $OMNI</title>
+
+  <link rel="stylesheet" href="index-1vDGslHI.css">
+  <style type="text/css">
+    .rfm-marquee-container {
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: var(--width);
+      transform: var(--transform);
+    }
+
+    .rfm-marquee-container:hover div {
+      animation-play-state: var(--pause-on-hover);
+    }
+
+    .rfm-marquee-container:active div {
+      animation-play-state: var(--pause-on-click);
+    }
+
+    .rfm-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .rfm-overlay::before,
+    .rfm-overlay::after {
+      background: linear-gradient(to right, var(--gradient-color), transparent);
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: var(--gradient-width);
+      z-index: 2;
+      pointer-events: none;
+      touch-action: none;
+    }
+
+    .rfm-overlay::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    .rfm-overlay::before {
+      left: 0;
+      top: 0;
+    }
+
+    .rfm-marquee {
+      flex: 0 0 auto;
+      min-width: var(--min-width);
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+      animation-play-state: var(--play);
+      animation-delay: var(--delay);
+      animation-direction: var(--direction);
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .rfm-initial-child-container {
+      flex: 0 0 auto;
+      display: flex;
+      min-width: auto;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .rfm-child {
+      transform: var(--transform);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div
+      style="background-color: rgba(10, 10, 30, 0.9); color: white; width: 100%; --pause-on-hover: paused; --pause-on-click: paused; --width: 100%; --transform: none;"
+      class="rfm-marquee-container ">
+      <div class="rfm-marquee"
+        style="--play: running; --direction: normal; --duration: 13.592857142857143s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+        <div class="rfm-initial-child-container">
+          <div style="--transform: none;" class="rfm-child">
+            <div
+              style="position: relative; top: 10%; left: 30%; width: 80%; margin-left: 300px; height: 80%; text-align: center; font-size: 1.3rem; font-family: IBM Plex Mono;">
+              Total Holders: 19.6k</div>
+          </div>
+          <div style="--transform: none;" class="rfm-child">
+            <div
+              style="position: relative; top: 10%; left: 30%; width: 80%; margin-left: 300px; height: 80%; text-align: center; font-size: 1.3rem; font-family: IBM Plex Mono;">
+              Number of Chains: 7</div>
+          </div>
+          <div style="--transform: none;" class="rfm-child">
+            <div
+              style="position: relative; top: 10%; left: 30%; width: 80%; margin-left: 300px; height: 80%; text-align: center; font-size: 1.3rem; font-family: IBM Plex Mono;">
+              Total Trading Volume: $272 million</div>
+          </div>
+        </div>
+      </div>
+      <div class="rfm-marquee"
+        style="--play: running; --direction: normal; --duration: 13.592857142857143s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+        <div style="--transform: none;" class="rfm-child">
+          <div
+            style="position: relative; top: 10%; left: 30%; width: 80%; margin-left: 300px; height: 80%; text-align: center; font-size: 1.3rem; font-family: IBM Plex Mono;">
+            Total Holders: 19.6k</div>
+        </div>
+        <div style="--transform: none;" class="rfm-child">
+          <div
+            style="position: relative; top: 10%; left: 30%; width: 80%; margin-left: 300px; height: 80%; text-align: center; font-size: 1.3rem; font-family: IBM Plex Mono;">
+            Number of Chains: 7</div>
+        </div>
+        <div style="--transform: none;" class="rfm-child">
+          <div
+            style="position: relative; top: 10%; left: 30%; width: 80%; margin-left: 300px; height: 80%; text-align: center; font-size: 1.3rem; font-family: IBM Plex Mono;">
+            Total Trading Volume: $272 million</div>
+        </div>
+      </div>
+    </div>
+    <div class="desktop"
+      style="background-image: url(&quot;spacecat-9PGu8H7Q.png&quot;); background-position: center center; background-size: cover; background-repeat: no-repeat; width: 100vw; height: 100vh; border: 0.1px solid black;">
+      <div style="background-color: rgba(10, 10, 30, 0.6); color: white; display: flex; height: 100vh; width: auto;">
+        <div style="display: flex; margin: auto;">
+          <div
+            style="margin: auto; height: 50%; background-color: rgba(10, 10, 30, 0.9); border-radius: 15px; width: 600px; min-height: 650px;"
+            id="myHeader">
+            <div
+              style="position: relative; top: 5%; left: 9%; display: flex; justify-content: space-between; align-items: center;">
+              <img style="width: 50px; height: 50px;" src="omni-logo-ci6jb3EF.svg">
+              <h1 style="position: relative; width: 100%; font-family: Roboto; font-size: 2.5rem; left: 2%;">OmniCat
+              </h1>
+            </div>
+            <div
+              style="position: relative; left: 10%; top: 5%; width: 80%; height: 80%; text-align: left; font-size: 1rem; font-family: IBM Plex Mono;">
+              <h3><span style="color: rgb(0, 133, 255);">$OMNI</span> Revenue Share is now LIVE</h3>
+              <hr style="position: relative; top: 5%; border: 0.1px solid grey;">
+              <div style="position: relative; display: flex;"><button id="connect_button"
+                  style="background-color: rgb(44, 42, 161); border-radius: 5px; height: 60px; width: 225px; cursor: pointer; color: white; font-family: IBM Plex Mono;"
+                  target="_blank">Claim Revenue Share</button></div>
+            </div>
+          </div>
+          <div
+            style="position: relative; left: 2%; margin: auto; height: 50%; background-color: rgba(10, 10, 30, 0.9); border-radius: 15px; width: 350px; min-height: 650px;"
+            id="myHeader">
+            <div
+              style="position: relative; left: 10%; top: 5%; width: 80%; height: 80%; text-align: left; font-size: 1rem; font-family: IBM Plex Mono;">
+              <h1>LINKS</h1>
+              <hr style="position: relative; top: 5%; border: 0.1px solid grey;">
+              <div
+                style="position: relative; top: 20px; margin-bottom: 10%; width: 100%; display: flex; justify-content: center;">
+                <button
+                  style="background-color: rgb(44, 42, 161); border-radius: 5px; height: 60px; position: relative; width: 100%; cursor: pointer; color: white; font-family: IBM Plex Mono;"
+                  target="_blank">jupiter exchange</button></div>
+              <div
+                style="position: relative; top: 20px; margin-bottom: 10%; width: 100%; display: flex; justify-content: center;">
+                <button
+                  style="background-color: rgb(44, 42, 161); border-radius: 5px; height: 60px; position: relative; width: 100%; cursor: pointer; color: white; font-family: IBM Plex Mono;"
+                  target="_blank">matcha swap</button></div>
+              <div
+                style="position: relative; top: 20px; margin-bottom: 10%; width: 100%; display: flex; justify-content: center;">
+                <button
+                  style="background-color: rgb(44, 42, 161); border-radius: 5px; height: 60px; position: relative; width: 100%; cursor: pointer; color: white; font-family: IBM Plex Mono;"
+                  target="_blank">stargate bridge</button></div>
+              <div
+                style="position: relative; top: 20px; margin-bottom: 10%; width: 100%; display: flex; justify-content: center;">
+                <button
+                  style="background-color: rgb(44, 42, 161); border-radius: 5px; height: 60px; position: relative; width: 100%; cursor: pointer; color: white; font-family: IBM Plex Mono;"
+                  target="_blank">dexscreener</button></div>
+              <div
+                style="position: relative; top: 20px; margin-bottom: 10%; width: 100%; display: flex; justify-content: center;">
+                <button
+                  style="background-color: rgb(45, 56, 82); border-radius: 5px; height: 60px; position: relative; width: 100%; cursor: pointer; color: white; font-family: IBM Plex Mono;">omnichain
+                  terminal (soon)</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile_device_480px"
+      style="background-image: url(&quot;spacecat-9PGu8H7Q.png&quot;); height: 100vh; width: 100vw;">
+      <div style="background-color: rgba(10, 10, 30, 0.6); color: white; display: flex; height: 100vh; width: auto;">
+        mobile coming soon omnibros</div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
